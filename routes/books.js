@@ -7,7 +7,7 @@ bookRouter.route('/')
   .get(userCtrl.index)
   .post(userCtrl.create)
 
-userRouter.route('/:id')
+bookRouter.route('/:id')
   .get(bookCtrl.show)
   .patch(bookCtrl.update)
   .delete(bookCtrl.destroy)

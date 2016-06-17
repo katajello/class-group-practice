@@ -17,7 +17,7 @@ mongoose.connect('mongodb://localhost/susan-class-group-practice', function(err)
 app.use(logger('dev'));
 app.use(bodyParser.json());
 
-app.use('/api/businesses', businessRoutes);
+app.use('/api/books', bookRouter);
 
 app.listen(port, function(err) {
   if(err) return console.log(err)
