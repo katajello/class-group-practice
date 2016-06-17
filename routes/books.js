@@ -1,11 +1,11 @@
 var
   express = require('express'),
-  userRouter = express.Router()
-  userCtrl = require('../controllers/books.js')
+  bookRouter = express.Router()
+  bookCtrl = require('../controllers/books.js')
 
 bookRouter.route('/')
-  .get(userCtrl.index)
-  .post(userCtrl.create)
+  .get(bookCtrl.index)
+  .post(bookCtrl.create)
 
 bookRouter.route('/:id')
   .get(bookCtrl.show)
