@@ -1,0 +1,25 @@
+{
+  "name": "susan-class-group-practice",
+  "version": "1.0.0",
+  "description": "This is for class practice",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/susanrotondo/susan-class-group-practice.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/susanrotondo/susan-class-group-practice/issues"
+  },
+  "homepage": "https://github.com/susanrotondo/susan-class-group-practice#readme",
+  "dependencies": {
+    "body-parser": "^1.15.1",
+    "express": "^4.14.0",
+    "mongoose": "^4.5.0",
+    "morgan": "^1.7.0"
+  }
+}
