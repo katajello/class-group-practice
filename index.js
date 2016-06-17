@@ -4,7 +4,8 @@ var
   port = 3000,
   logger = require('morgan'),
   bodyParser = require('body-parser'),
-  mongoose = require('mongoose');
+  mongoose = require('mongoose'),
+  bookRoutes = require('./routes/books.js');
 
 mongoose.connect('mongodb://localhost/susan-class-group-practice', function(err) {
   if(err) {
@@ -17,7 +18,7 @@ mongoose.connect('mongodb://localhost/susan-class-group-practice', function(err)
 app.use(logger('dev'));
 app.use(bodyParser.json());
 
-app.use('/api/books', bookRouter);
+app.use('/api/books', bookRoutes);
 
 app.listen(port, function(err) {
   if(err) return console.log(err)

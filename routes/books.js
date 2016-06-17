@@ -1,6 +1,6 @@
 var
   express = require('express'),
-  bookRouter = express.Router()
+  bookRouter = express.Router(),
   bookCtrl = require('../controllers/books.js')
 
 bookRouter.route('/')
