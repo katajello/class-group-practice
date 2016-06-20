@@ -9,6 +9,7 @@ var
   ejsLayouts = require('express-ejs-layouts'),
   bookRoutes = require('./routes/books.js');
 
+
 mongoose.connect('mongodb://localhost/susan-class-group-practice', function(err) {
   if(err) {
     return console.log(err);
@@ -20,6 +21,15 @@ app.set('view engine', 'ejs')
 
 
 // Application-wide middleware:
+
+// Application-wide middleware:
+app.use(logger('dev'))
+app.use(bodyParser.json())
+app.use(bodyParser.urlencoded({extended: false}))
+app.use(ejsLayouts)
+app.use(express.static("./public"))
+//
+
 
 app.use(logger('dev'));
 app.use(bodyParser.json());
