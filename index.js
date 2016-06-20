@@ -22,15 +22,6 @@ app.set('view engine', 'ejs')
 
 // Application-wide middleware:
 
-// Application-wide middleware:
-app.use(logger('dev'))
-app.use(bodyParser.json())
-app.use(bodyParser.urlencoded({extended: false}))
-app.use(ejsLayouts)
-app.use(express.static("./public"))
-//
-
-
 app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended:false}))
