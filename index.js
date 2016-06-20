@@ -25,7 +25,7 @@ app.set('view engine', 'ejs')
 app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended:false}))
-app.use(ejsLayout)
+app.use(ejsLayouts)
 app.use(express.static('.public'))
 app.use('/api/books', bookRoutes);
 
